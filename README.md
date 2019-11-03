@@ -23,10 +23,6 @@ It's a \#SPA \#SinglePageApp
 * right click `index.html` and choose a browser
 * play the game!
 
-
-
-![Memory Game](img/memory-game-logo.jpg)
-
 ---
 
 # Abdul Muqtadir
