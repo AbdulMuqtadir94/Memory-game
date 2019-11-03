@@ -1,0 +1,85 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <title>Matching Game</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Matching Game">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Coda">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="img/memory-game-logo.jpg">
+  <!--Custom Font Awesome Kit -->
+  <script src="https://kit.fontawesome.com/7c0d989404.js" crossorigin="anonymous"></script>
+  <!--jQuery, Bootstrap and Materialize CSS CDN --> 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!--JavaScript-->
+  <script src="js/stopwatch.js"></script>
+  <script src="js/app.js"></script>
+</head>
+
+<body>
+
+  <div class="middle-box">
+    <header>
+      <h4 class="text-center">Matching Game</h4>
+      <p class="text-center"><a title="GitHub Project Page" href="https://github.com/AbdulMuqtadir94/memory-game.git">by Abdul Muqtadir</a></p>
+    </header>
+
+    <section class="score-panel">
+      <ul id="stars-list" class="stars">
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+        <li><i class="fa fa-star"></i></li>
+      </ul>
+      <span id="grade" class="moves"></span>
+
+      <span style="margin: 0px 20px;">
+        <strong><span id="moves-text"></span></strong> Moves
+      </span>
+
+      <span style="margin: 0px 20px;">
+        <strong><span id="time-text"></span></strong>
+      </span>
+
+      <span style="margin: 0px 20px;">
+        <strong><span id="msg-text"></span></strong>
+      </span>
+
+      <div id="info-btn" class="hint">
+        <span><i class="fa fa-info"></i> Info</span>
+      </div>
+      <div id="reset-btn" class="restart">
+        <span><i class="fa fa-repeat"></i> Reset</span>
+      </div>
+    </section>
+
+    <ul id="deck" class="deck" ></ul>
+  </div>
+
+  <!--  -->
+
+  <div id="game_modal" class="modal">
+    <div class="modal-content">
+      <h4>Congrats!</h4>
+      <h5>Game Results</h5>
+
+      <p><strong>Time:</strong> <span id="time_results"></span></p>
+      <p><strong>Moves:</strong> <span id="moves_results"></span></p>
+      <p><strong>Grade:</strong> <span id="grade_results"></span></p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="modal_reset_btn">Replay</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
